@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Pant | MERN Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9babf1f57d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>MERN Stack Developer</p>
+                <h1>Hi, I'm <span>Pawan Pant</span>, a passionate<br> full-stack developer</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a **MERN Stack Developer** currently in college, passionate about building scalable 
+                        and efficient web applications. I have experience in full-stack development, UI/UX design, 
+                        and backend optimization.
+                    </p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="openTab('skills')">Skills</div>
+                        <div class="tab-links" onclick="openTab('Experience')">Experience</div>
+                        <div class="tab-links" onclick="openTab('Education')">Education</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend:</span> React.js, HTML, CSS, JavaScript</li>
+                            <li><span>Backend:</span> Node.js, Express.js</li>
+                            <li><span>Database:</span> MongoDB, MySQL, PostgreSQL</li>
+                            <li><span>Tools:</span> Git, REST APIs, Firebase</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2025 - Present</span><br>MERN Stack Developer Intern at MakeIntern</li>
+                            <li><span>2024</span><br>UI/UX Design Intern at Cotho Solution</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Currently Pursuing</span><br>Bachelor's Degree in Computer Science</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">What I Do</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Web Development</h2>
+                    <p>Building high-performance web applications using the MERN stack.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designing user-friendly interfaces with modern design principles.</p>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-node-js"></i>
+                    <h2>Backend Development</h2>
+                    <p>Developing scalable APIs and optimizing server performance.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Developed a full-stack e-commerce website using React, Node.js, and MongoDB.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Real-Time Chat App</h3>
+                        <p>Built a chat application using Socket.io for real-time messaging.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Designed and developed a personal portfolio showcasing my work.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Get in Touch</h1>
+            <p><i class="fa-solid fa-envelope"></i> pawanpant1213@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91 8178080297</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Pawan Pant. Built</i> by Pawan.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
